@@ -19,11 +19,21 @@ The table show below (position_to_fill table), indicates that the largest number
 ## Summary:
 Pewlett Hackard is facing an upcoming "silver tsunami" baby boomers retirements. This will have a huge impact on the company's future success. To avert unwanted consquence due to this "tsunami" of retirments, a strong employee research and planning is vital. The number of upcoming retirements will leave thousands of job openings. As a result, we build employee database with SQL by applying data modeling, engineering, and analysis skills. Among the different generated reports, position_to_fill table above give a good insight about the number of the employees that are about to retire per job title per department. The code shown below used to generate this information.
 
+SELECT DISTINCT ON (ut.emp_no) 
+	-ut.emp_no,
+	-ut.first_name,
+	-ut.last_name,
+	-ut.title,
+	-d.dept_name
+INTO unique_titles_dept
+FROM unique_titles as ut
+	-INNER JOIN dept_emp as de
+		-ON (ut.emp_no = de.emp_no)
+	-INNER JOIN departments as d
+		-ON (d.dept_no = de.dept_no)
+ORDER BY ut.emp_no, ut.to_date DESC;
 
- <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/114262970/203798035-2b177049-d540-4eba-80eb-8290775b792b.png">
+ The code shown below gave us the answer the second question in our objective, how many positions will the company need to fill?. The below code is used to count the number of upcoming retirements per departments. As it is shown above, the analysis results helps to points the direction of the future extensive hiring process by the company in the upcoming years. 
 
-The code shown below gave us the answer the second question in our objective, how many positions will the company need to fill?. The below code is used to count the number of upcoming retirements per departments. As it is shown above, the analysis results helps to points the direction of the future extensive hiring process by the company in the upcoming years. 
-
-<source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/114262970/203798884-2d76a114-3c98-497d-b623-a84442860582.png">
 ![image](https://user-images.githubusercontent.com/114262970/203798884-2d76a114-3c98-497d-b623-a84442860582.png)
 
