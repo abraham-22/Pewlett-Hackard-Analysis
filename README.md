@@ -19,7 +19,7 @@ The table show below (position_to_fill table), indicates that the largest number
 ## Summary:
 Pewlett Hackard is facing an upcoming "silver tsunami" baby boomers retirements. This will have a huge impact on the company's future success. To avert unwanted consquence due to this "tsunami" of retirments, a strong employee research and planning is vital. The number of upcoming retirements will leave thousands of job openings. As a result, we build employee database with SQL by applying data modeling, engineering, and analysis skills. Among the different generated reports, position_to_fill table above give a good insight about the number of the employees that are about to retire per job title per department. The code shown below used to generate this information.
 
-![image](https://user-images.githubusercontent.com/114262970/203798035-2b177049-d540-4eba-80eb-8290775b792b.png)
+
  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/114262970/203798035-2b177049-d540-4eba-80eb-8290775b792b.png">
 
 The code shown below gave us the answer the second question in our objective, how many positions will the company need to fill?. The below code is used to count the number of upcoming retirements per departments. As it is shown above, the analysis results helps to points the direction of the future extensive hiring process by the company in the upcoming years. 
