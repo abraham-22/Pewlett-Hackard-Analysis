@@ -4,8 +4,8 @@
 Pewlett-Hackard offering a retirement package for their aging employee who meet a criteria. The company also starting to plan about future hiring process in which positions will need to be filled due to the upcoming retirements.The overall purpose of this analysis is to answer to find out who will be retiring in the next few years? And how many positions will the company need to fill? The analysis will provide a list of all employees eligible for the retirement package.
 
 ## Resources: 
-Data Sources: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
-Software: SQL, PostgreSQL, pgAdmin
+* Data Sources: departments.csv, dept_emp.csv, dept_manager.csv, employees.csv, salaries.csv, titles.csv
+* Software: SQL, PostgreSQL, pgAdmin
 
 
 ## Results: 
