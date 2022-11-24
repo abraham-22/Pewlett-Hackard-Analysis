@@ -24,8 +24,5 @@ Pewlett Hackard is facing an upcoming "silver tsunami" baby boomers retirements.
 
 The code shown below gave us the answer the second question in our objective, how many positions will the company need to fill?. The below code is used to count the number of upcoming retirements per departments. As it is shown above, the analysis results helps to points the direction of the future extensive hiring process by the company in the upcoming years. 
 
-SELECT utd.dept_name, utd.title, COUNT(utd.title) 
-INTO positions_to_fill
-FROM (SELECT title, dept_name from unique_titles_dept) as utd
-GROUP BY utd.dept_name, utd.title
-ORDER BY utd.dept_name DESC;
+![image](https://user-images.githubusercontent.com/114262970/203798884-2d76a114-3c98-497d-b623-a84442860582.png)
+
